@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#include "functions.h"
+#include "function.h"
 /*
 This is the main method
 It's the entry point of our program
@@ -16,6 +16,10 @@ int main(int argc, char* argv[]){
 		argv1 = atoi(argv[1]);
 		argv2 = atoi(argv[2]);
 		printf("The sum of argv[1] and argv[2]: %d\n", add(argv1, argv2));
+		printf("The difference of argv[1] and argv[2]: %d\n", sub(argv1, argv2));
+		printf("The product of argv[1] and argv[2]: %d\n", multi(argv1, argv2));
+		printf("The quotient of argv[1] and argv[2]: %d\n", quot(argv1, argv2));
+		printf("The modulus of argv[1] and argv[2]: %d\n", modu(argv1, argv2));
 		}
 	}
 	return 0;
